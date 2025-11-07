@@ -1,0 +1,418 @@
+---
+import "../styles/global.css";
+import Navbar from "../components/Navbar.astro";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Program – QEpi 2026</title>
+  </head>
+
+  <body class="font-sans text-gray-900 bg-gray-50">
+    <Navbar />
+
+    <!-- Hero Banner -->
+    <section
+      class="relative pt-32 pb-20 text-white text-center bg-cover bg-center bg-no-repeat"
+      style="background-image: url('/Ulm2.jpg');"
+    >
+      <div class="absolute inset-0 bg-black/50"></div>
+      <div class="relative z-10">
+        <h1 class="text-4xl md:text-5xl font-bold mb-4">Conference Timetable</h1>
+        <p class="text-base md:text-lg max-w-2xl mx-auto px-6">
+          Detailed overview of the 4-day schedule for QEpi 2026
+        </p>
+      </div>
+    </section>
+
+    <!-- Timetable -->
+    <section class="max-w-7xl mx-auto py-16 px-6">
+      <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">
+        Preliminary Schedule
+      </h2>
+
+      <div class="space-y-12">
+
+        <!-- Monday 18 -->
+        <div class="bg-white rounded-2xl shadow-lg border border-gray-200 overflow-hidden">
+          <h3 class="bg-indigo-600 text-white text-xl font-semibold py-3 px-6 text-center">
+            Monday, 18 May 2026
+          </h3>
+          <div class="divide-y divide-gray-100">
+            <div class="flex items-start p-4 hover:bg-gray-50 transition bg-indigo-50">
+              <div class="w-32 text-sm font-semibold text-gray-700">08:00–09:15</div>
+              <div class="flex-1">
+                <p class="font-medium text-gray-900">Breakfast</p>
+              </div>
+            </div>
+
+            <div class="flex items-start p-4 hover:bg-gray-50 transition">
+              <div class="w-32 text-sm font-semibold text-gray-700">09:15–09:30</div>
+              <div class="flex-1">
+                <p class="font-medium text-gray-900">Opening</p>
+              </div>
+            </div>
+
+            <div class="flex items-start p-4 hover:bg-gray-50 transition">
+              <div class="w-32 text-sm font-semibold text-gray-700">09:30–10:45</div>
+              <div class="flex-1">
+                <p class="font-medium text-gray-900">Workshop 1</p>
+                <p class="text-sm text-gray-600 italic">Invited Talk (IT) 1 </p>
+              </div>
+            </div>
+
+            <div class="flex items-start p-4 hover:bg-gray-50 transition bg-indigo-50">
+              <div class="w-32 text-sm font-semibold text-gray-700">10:45–11:15</div>
+              <div class="flex-1">
+                <p class="font-medium text-gray-900">Coffee break</p>
+              </div>
+            </div>
+
+            <div class="flex items-start p-4 hover:bg-gray-50 transition">
+              <div class="w-32 text-sm font-semibold text-gray-700">11:15–12:30</div>
+              <div class="flex-1">
+                <p class="font-medium text-gray-900">Talk 1</p>
+                <p class="text-sm text-gray-600 italic">IT 2</p>
+              </div>
+            </div>
+
+            <div class="flex items-start p-4 hover:bg-gray-50 transition">
+              <div class="w-32 text-sm font-semibold text-gray-700">12:30–13:00</div>
+              <div class="flex-1">
+                <p class="font-medium text-gray-900">Round table</p>
+              </div>
+            </div>
+
+            <div class="flex items-start p-4 hover:bg-gray-50 transition bg-indigo-50">
+              <div class="w-32 text-sm font-semibold text-gray-700">13:00–14:15</div>
+              <div class="flex-1">
+                <p class="font-medium text-gray-900">Lunch Break</p>
+              </div>
+            </div>
+
+            <div class="flex items-start p-4 hover:bg-gray-50 transition">
+              <div class="w-32 text-sm font-semibold text-gray-700">14:15–15:30</div>
+              <div class="flex-1">
+                <p class="font-medium text-gray-900">Workshop 2</p>
+                <p class="text-sm text-gray-600 italic">IT 3</p>
+              </div>
+            </div>
+
+            <div class="flex items-start p-4 hover:bg-gray-50 transition">
+              <div class="w-32 text-sm font-semibold text-gray-700">15:30–16:00</div>
+              <div class="flex-1">
+                <p class="font-medium text-gray-900">Cont. talk 1</p>
+              </div>
+            </div>
+
+            <div class="flex items-start p-4 hover:bg-gray-50 transition">
+              <div class="w-32 text-sm font-semibold text-gray-700">16:00–16:30</div>
+              <div class="flex-1">
+                <p class="font-medium text-gray-900">Cont. talk 2</p>
+              </div>
+            </div>
+
+            <div class="flex items-start p-4 hover:bg-gray-50 transition bg-indigo-50">
+              <div class="w-32 text-sm font-semibold text-gray-700">16:30–17:00</div>
+              <div class="flex-1">
+                <p class="font-medium text-gray-900">Coffee break</p>
+              </div>
+            </div>
+
+            <div class="flex items-start p-4 hover:bg-gray-50 transition">
+              <div class="w-32 text-sm font-semibold text-gray-700">17:00–18:15</div>
+              <div class="flex-1">
+                <p class="font-medium text-gray-900">Talk 2</p>
+                <p class="text-sm text-gray-600 italic">IT 4</p>
+              </div>
+            </div>
+
+            <div class="flex items-start p-4 hover:bg-gray-50 transition">
+              <div class="w-32 text-sm font-semibold text-gray-700">18:15–18:45</div>
+              <div class="flex-1">
+                <p class="font-medium text-gray-900">Cont. talk 3</p>
+              </div>
+            </div>
+
+            <div class="flex items-start p-4 hover:bg-gray-50 transition bg-indigo-50">
+              <div class="w-32 text-sm font-semibold text-gray-700">18:45–19:30</div>
+              <div class="flex-1">
+                <p class="font-medium text-gray-900">Break</p>
+              </div>
+            </div>
+
+            <div class="flex items-start p-4 hover:bg-gray-50 transition bg-indigo-50">
+              <div class="w-32 text-sm font-semibold text-gray-700">19:30–</div>
+              <div class="flex-1">
+                <p class="font-medium text-gray-900">Dinner</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tuesday 19 -->
+        <div class="bg-white rounded-2xl shadow-lg border border-gray-200 overflow-hidden">
+          <h3 class="bg-indigo-600 text-white text-xl font-semibold py-3 px-6 text-center">
+            Tuesday, 19 May 2026
+          </h3>
+          <div class="divide-y divide-gray-100">
+            <div class="flex items-start p-4 hover:bg-gray-50 transition bg-indigo-50">
+              <div class="w-32 text-sm font-semibold text-gray-700">08:00–09:00</div>
+              <div class="flex-1">
+                <p class="font-medium text-gray-900">Breakfast</p>
+              </div>
+            </div>
+
+            <div class="flex items-start p-4 hover:bg-gray-50 transition">
+              <div class="w-32 text-sm font-semibold text-gray-700">09:00–10:15</div>
+              <div class="flex-1">
+                <p class="font-medium text-gray-900">Workshop 3</p>
+                <p class="text-sm text-gray-600 italic">IT 5</p>
+              </div>
+            </div>
+
+            <div class="flex items-start p-4 hover:bg-gray-50 transition">
+              <div class="w-32 text-sm font-semibold text-gray-700">10:15–10:45</div>
+              <div class="flex-1">
+                <p class="font-medium text-gray-900">Cont. talk 4</p>
+              </div>
+            </div>
+
+            <div class="flex items-start p-4 hover:bg-gray-50 transition bg-indigo-50">
+              <div class="w-32 text-sm font-semibold text-gray-700">10:45–11:15</div>
+              <div class="flex-1">
+                <p class="font-medium text-gray-900">Coffee break</p>
+              </div>
+            </div>
+
+            <div class="flex items-start p-4 hover:bg-gray-50 transition">
+              <div class="w-32 text-sm font-semibold text-gray-700">11:15–12:30</div>
+              <div class="flex-1">
+                <p class="font-medium text-gray-900">Talk 3</p>
+                <p class="text-sm text-gray-600 italic">IT 6</p>
+              </div>
+            </div>
+
+            <div class="flex items-start p-4 hover:bg-gray-50 transition">
+              <div class="w-32 text-sm font-semibold text-gray-700">12:30–13:00</div>
+              <div class="flex-1">
+                <p class="font-medium text-gray-900">Round table</p>
+              </div>
+            </div>
+
+            <div class="flex items-start p-4 hover:bg-gray-50 transition bg-indigo-50">
+              <div class="w-32 text-sm font-semibold text-gray-700">13:00–14:15</div>
+              <div class="flex-1">
+                <p class="font-medium text-gray-900">Lunch Break</p>
+              </div>
+            </div>
+
+            <div class="flex items-start p-4 hover:bg-gray-50 transition">
+              <div class="w-32 text-sm font-semibold text-gray-700">14:15–15:30</div>
+              <div class="flex-1">
+                <p class="font-medium text-gray-900">Talk 4</p>
+                <p class="text-sm text-gray-600 italic">IT 7</p>
+              </div>
+            </div>
+
+            <div class="flex items-start p-4 hover:bg-gray-50 transition">
+              <div class="w-32 text-sm font-semibold text-gray-700">15:30–16:00</div>
+              <div class="flex-1">
+                <p class="font-medium text-gray-900">Cont. talk 5</p>
+              </div>
+            </div>
+
+            <div class="flex items-start p-4 hover:bg-gray-50 transition">
+              <div class="w-32 text-sm font-semibold text-gray-700">16:00–16:30</div>
+              <div class="flex-1">
+                <p class="font-medium text-gray-900">Cont. talk 6</p>
+              </div>
+            </div>
+
+            <div class="flex items-start p-4 hover:bg-gray-50 transition bg-indigo-50">
+              <div class="w-32 text-sm font-semibold text-gray-700">16:30–17:00</div>
+              <div class="flex-1">
+                <p class="font-medium text-gray-900">Coffee break</p>
+              </div>
+            </div>
+
+            <div class="flex items-start p-4 hover:bg-gray-50 transition">
+              <div class="w-32 text-sm font-semibold text-gray-700">17:00–18:15</div>
+              <div class="flex-1">
+                <p class="font-medium text-gray-900">Talk 5</p>
+                <p class="text-sm text-gray-600 italic">IT 8</p>
+              </div>
+            </div>
+
+            <div class="flex items-start p-4 hover:bg-gray-50 transition">
+              <div class="w-32 text-sm font-semibold text-gray-700">18:15–18:45</div>
+              <div class="flex-1">
+                <p class="font-medium text-gray-900">Cont. talk 7</p>
+              </div>
+            </div>
+
+            <div class="flex items-start p-4 hover:bg-gray-50 transition bg-indigo-50">
+              <div class="w-32 text-sm font-semibold text-gray-700">18:45–19:30</div>
+              <div class="flex-1">
+                <p class="font-medium text-gray-900">Break</p>
+              </div>
+            </div>
+
+            <div class="flex items-start p-4 hover:bg-gray-50 transition bg-indigo-50">
+              <div class="w-32 text-sm font-semibold text-gray-700">19:30–</div>
+              <div class="flex-1">
+                <p class="font-medium text-gray-900">Dinner</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Wednesday 20 -->
+        <div class="bg-white rounded-2xl shadow-lg border border-gray-200 overflow-hidden">
+          <h3 class="bg-indigo-600 text-white text-xl font-semibold py-3 px-6 text-center">
+            Wednesday, 20 May 2026
+          </h3>
+          <div class="divide-y divide-gray-100">
+            <div class="flex items-start p-4 hover:bg-gray-50 transition bg-indigo-50">
+              <div class="w-32 text-sm font-semibold text-gray-700">08:00–09:00</div>
+              <div class="flex-1">
+                <p class="font-medium text-gray-900">Breakfast</p>
+              </div>
+            </div>
+
+            <div class="flex items-start p-4 hover:bg-gray-50 transition">
+              <div class="w-32 text-sm font-semibold text-gray-700">09:00–10:15</div>
+              <div class="flex-1">
+                <p class="font-medium text-gray-900">Talk 6</p>
+                <p class="text-sm text-gray-600 italic">IT 9</p>
+              </div>
+            </div>
+
+            <div class="flex items-start p-4 hover:bg-gray-50 transition">
+              <div class="w-32 text-sm font-semibold text-gray-700">10:15–10:45</div>
+              <div class="flex-1">
+                <p class="font-medium text-gray-900">Cont. talk 8</p>
+              </div>
+            </div>
+
+            <div class="flex items-start p-4 hover:bg-gray-50 transition bg-indigo-50">
+              <div class="w-32 text-sm font-semibold text-gray-700">10:45–11:15</div>
+              <div class="flex-1">
+                <p class="font-medium text-gray-900">Coffee break</p>
+              </div>
+            </div>
+
+            <div class="flex items-start p-4 hover:bg-gray-50 transition">
+              <div class="w-32 text-sm font-semibold text-gray-700">11:15–12:30</div>
+              <div class="flex-1">
+                <p class="font-medium text-gray-900">Talk 7</p>
+                <p class="text-sm text-gray-600 italic">IT 10</p>
+              </div>
+            </div>
+
+            <div class="flex items-start p-4 hover:bg-gray-50 transition">
+              <div class="w-32 text-sm font-semibold text-gray-700">12:30–13:00</div>
+              <div class="flex-1">
+                <p class="font-medium text-gray-900">
+                  Round table young researchers only
+                </p>
+              </div>
+            </div>
+
+            <div class="flex items-start p-4 hover:bg-gray-50 transition bg-indigo-50">
+              <div class="w-32 text-sm font-semibold text-gray-700">13:00–14:30</div>
+              <div class="flex-1">
+                <p class="font-medium text-gray-900">Lunch Break</p>
+              </div>
+            </div>
+
+            <div class="flex items-start p-4 hover:bg-gray-50 transition bg-indigo-50">
+              <div class="w-32 text-sm font-semibold text-gray-700">14:30–19:30</div>
+              <div class="flex-1">
+                <p class="font-medium text-gray-900">
+                  Group activity (Departure for Ulm)
+                </p>
+              </div>
+            </div>
+
+            <div class="flex items-start p-4 hover:bg-gray-50 transition bg-indigo-50">
+              <div class="w-32 text-sm font-semibold text-gray-700">19:30–</div>
+              <div class="flex-1">
+                <p class="font-medium text-gray-900">Social Dinner in Ulm</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Thursday 21 -->
+        <div class="bg-white rounded-2xl shadow-lg border border-gray-200 overflow-hidden">
+          <h3 class="bg-indigo-600 text-white text-xl font-semibold py-3 px-6 text-center">
+            Thursday, 21 May 2026
+          </h3>
+          <div class="divide-y divide-gray-100">
+            <div class="flex items-start p-4 hover:bg-gray-50 transition bg-indigo-50">
+              <div class="w-32 text-sm font-semibold text-gray-700">08:00–09:00</div>
+              <div class="flex-1">
+                <p class="font-medium text-gray-900">Breakfast</p>
+              </div>
+            </div>
+
+            <div class="flex items-start p-4 hover:bg-gray-50 transition">
+              <div class="w-32 text-sm font-semibold text-gray-700">09:00–10:15</div>
+              <div class="flex-1">
+                <p class="font-medium text-gray-900">Talk 8</p>
+                <p class="text-sm text-gray-600 italic">IT 11</p>
+              </div>
+            </div>
+
+            <div class="flex items-start p-4 hover:bg-gray-50 transition">
+              <div class="w-32 text-sm font-semibold text-gray-700">10:15–10:45</div>
+              <div class="flex-1">
+                <p class="font-medium text-gray-900">Cont. talk 9</p>
+              </div>
+            </div>
+
+            <div class="flex items-start p-4 hover:bg-gray-50 transition bg-indigo-50">
+              <div class="w-32 text-sm font-semibold text-gray-700">10:45–11:15</div>
+              <div class="flex-1">
+                <p class="font-medium text-gray-900">Coffee break</p>
+              </div>
+            </div>
+
+            <div class="flex items-start p-4 hover:bg-gray-50 transition">
+              <div class="w-32 text-sm font-semibold text-gray-700">11:15–12:30</div>
+              <div class="flex-1">
+                <p class="font-medium text-gray-900">Talk 9</p>
+                <p class="text-sm text-gray-600 italic">IT 12</p>
+              </div>
+            </div>
+
+            <div class="flex items-start p-4 hover:bg-gray-50 transition">
+              <div class="w-32 text-sm font-semibold text-gray-700">12:30–13:00</div>
+              <div class="flex-1">
+                <p class="font-medium text-gray-900">Final remarks</p>
+              </div>
+            </div>
+
+            <div class="flex items-start p-4 hover:bg-gray-50 transition bg-indigo-50">
+              <div class="w-32 text-sm font-semibold text-gray-700">13:00–</div>
+              <div class="flex-1">
+                <p class="font-medium text-gray-900">Greetings and lunch</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <p class="text-center text-gray-500 italic mt-12 text-sm">
+        The schedule is subject to change. Speaker names and final timings will be updated soon.
+      </p>
+    </section>
+
+    <footer class="bg-gray-900 text-white text-center py-6">
+      <p>QEpi 2026 – Quantum Effects on Epigenetic Regulation in Living Systems</p>
+    </footer>
+  </body>
+</html>
