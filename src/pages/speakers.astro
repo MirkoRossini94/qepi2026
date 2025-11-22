@@ -1,5 +1,5 @@
 ---
-import "../styles/global.css";     
+import "../styles/global.css";
 import Navbar from "../components/Navbar.astro";
 ---
 
@@ -26,134 +26,130 @@ import Navbar from "../components/Navbar.astro";
       </div>
     </section>
 
-    <!-- Invited Speakers -->
-    <section class="max-w-5xl mx-auto py-16 px-6">
-      
-      <!-- Speaker: Reiner Siebert -->
-      <article class="mb-12 border-b border-gray-300 pb-8">
-        <div class="flex flex-col sm:flex-row sm:items-start gap-4">
-          <img src="/speakers/Siebert.jpg" alt="Prof. Reiner Siebert" class="w-24 h-24 rounded-full object-cover shadow-md" />
-          <div>
-            <h2 class="text-lg font-semibold text-gray-900 mb-1">
-              Prof. Reiner Siebert – <span class="text-gray-700">University of Ulm, Germany</span>
-            </h2>
-            <p class="text-sm text-gray-600 italic mb-3">
-              Head of the Institute for Human Genetics
-            </p>
-            <p class="text-gray-700 leading-relaxed">
-              [Abstract text to be added here when available.]
-            </p>
-          </div>
-        </div>
-      </article>
+    <!-- Invited Speakers List -->
+    <section class="max-w-4xl mx-auto py-16 px-6 space-y-8">
 
-      <!-- Speaker: Ai-Min Guo -->
-      <article class="mb-12 border-b border-gray-300 pb-8">
-        <div class="flex flex-col sm:flex-row sm:items-start gap-4">
-          <img src="/speakers/ai-min guo.jpg" alt="Prof. Ai-Min Guo" class="w-24 h-24 rounded-full object-cover shadow-md" />
-          <div>
-            <h2 class="text-lg font-semibold text-gray-900 mb-1">
-              Prof. Ai-Min Guo – <span class="text-gray-700">Central South University, China</span>
-            </h2>
-            <p class="text-sm text-gray-600 italic mb-3">
-              [Title or research role TBD]
-            </p>
-            <p class="text-gray-700 leading-relaxed">
-              [Abstract text to be added here when available.]
-            </p>
-          </div>
-        </div>
-      </article>
+      <!-- SPEAKER 1 -->
+      <div class="relative group border-b border-gray-300 py-4 cursor-default">
+        <p class="text-lg font-semibold text-gray-900">
+          Prof. Reiner Siebert
+          <span class="text-gray-700 font-normal">– University of Ulm, Germany</span>
+        </p>
+        <p class="text-sm text-gray-500 italic">Head of the Institute for Human Genetics</p>
 
-      <!-- Speaker: Helene Kretzmer -->
-      <article class="mb-12 border-b border-gray-300 pb-8">
-        <div class="flex flex-col sm:flex-row sm:items-start gap-4">
-          <img src="/speakers/helene.jpg" alt="Dr. Helene Kretzmer" class="w-24 h-24 rounded-full object-cover shadow-md" />
-          <div>
-            <h2 class="text-lg font-semibold text-gray-900 mb-1">
-              Dr. Helene Kretzmer – <span class="text-gray-700">Max Planck Institute for Molecular Genetics, Germany</span>
-            </h2>
-            <p class="text-sm text-gray-600 italic mb-3">
-              Research Group Leader at Kretzmer Lab
-            </p>
-            <p class="text-gray-700 leading-relaxed">
-              [Abstract text to be added here when available.]
-            </p>
-          </div>
+        <!-- POPUP -->
+        <div class="absolute left-0 mt-2 w-80 bg-white shadow-lg rounded-lg p-4 text-sm text-gray-700 
+                    opacity-0 scale-95 pointer-events-none 
+                    group-hover:opacity-100 group-hover:scale-100 group-hover:pointer-events-auto
+                    transition-all duration-200 ease-out z-20">
+          [Abstract text to be added here when available.]
+          <div class="absolute -top-2 left-4 w-3 h-3 bg-white rotate-45 shadow-sm"></div>
         </div>
-      </article>
+      </div>
 
-      <!-- Speaker: Agostino Migliore -->
-      <article class="mb-12 border-b border-gray-300 pb-8">
-        <div class="flex flex-col sm:flex-row sm:items-start gap-4">
-          <img src="/speakers/speaker1.jpg" alt="Dr. Agostino Migliore" class="w-24 h-24 rounded-full object-cover shadow-md" />
-          <div>
-            <h2 class="text-lg font-semibold text-gray-900 mb-1">
-              Dr. Agostino Migliore – <span class="text-gray-700">Padua University, Italy</span>
-            </h2>
-            <p class="text-sm text-gray-600 italic mb-3">
-              Assistant Research Professor at TAME Plasmons
-            </p>
-            <p class="text-gray-700 leading-relaxed">
-              [Abstract text to be added here when available.]
-            </p>
-          </div>
-        </div>
-      </article>
+      <!-- SPEAKER 2 -->
+      <div class="relative group border-b border-gray-300 py-4 cursor-default">
+        <p class="text-lg font-semibold text-gray-900">
+          Prof. Ai-Min Guo
+          <span class="text-gray-700 font-normal">– Central South University, China</span>
+        </p>
+        <p class="text-sm text-gray-500 italic">[Title or research role TBD]</p>
 
-      <!-- Speaker: Susan Quinn -->
-      <article class="mb-12 border-b border-gray-300 pb-8">
-        <div class="flex flex-col sm:flex-row sm:items-start gap-4">
-          <img src="/speakers/susan.webp" alt="Prof. Susan Quinn" class="w-24 h-24 rounded-full object-cover shadow-md" />
-          <div>
-            <h2 class="text-lg font-semibold text-gray-900 mb-1">
-              Prof. Susan Quinn – <span class="text-gray-700">University College Dublin, Ireland</span>
-            </h2>
-            <p class="text-sm text-gray-600 italic mb-3">
-              Professor at School of Chemistry
-            </p>
-            <p class="text-gray-700 leading-relaxed">
-              [Abstract text to be added here when available.]
-            </p>
-          </div>
+        <div class="absolute left-0 mt-2 w-80 bg-white shadow-lg rounded-lg p-4 text-sm text-gray-700 
+                    opacity-0 scale-95 pointer-events-none 
+                    group-hover:opacity-100 group-hover:scale-100 group-hover:pointer-events-auto
+                    transition-all duration-200 ease-out z-20">
+          [Abstract text to be added here when available.]
+          <div class="absolute -top-2 left-4 w-3 h-3 bg-white rotate-45 shadow-sm"></div>
         </div>
-      </article>
+      </div>
 
-      <!-- Speaker: Hans-Achim Wagenknecht -->
-      <article class="mb-12 border-b border-gray-300 pb-8">
-        <div class="flex flex-col sm:flex-row sm:items-start gap-4">
-          <img src="/speakers/hans.jpg" alt="Prof. Hans-Achim Wagenknecht" class="w-24 h-24 rounded-full object-cover shadow-md" />
-          <div>
-            <h2 class="text-lg font-semibold text-gray-900 mb-1">
-              Prof. Hans-Achim Wagenknecht – <span class="text-gray-700">Karlsruhe Institute of Technology, Germany</span>
-            </h2>
-            <p class="text-sm text-gray-600 italic mb-3">
-              Research group leader at Wagenknecht group
-            </p>
-            <p class="text-gray-700 leading-relaxed">
-              [Abstract text to be added here when available.]
-            </p>
-          </div>
-        </div>
-      </article>
+      <!-- SPEAKER 3 -->
+      <div class="relative group border-b border-gray-300 py-4 cursor-default">
+        <p class="text-lg font-semibold text-gray-900">
+          Dr. Helene Kretzmer
+          <span class="text-gray-700 font-normal">– Max Planck Institute for Molecular Genetics, Germany</span>
+        </p>
+        <p class="text-sm text-gray-500 italic">Research Group Leader at Kretzmer Lab</p>
 
-      <!-- Speaker: Maria Coral del Val Muñoz -->
-      <article class="mb-12">
-        <div class="flex flex-col sm:flex-row sm:items-start gap-4">
-          <img src="/speakers/Maria.jpg" alt="Prof. Maria Coral del Val Muñoz" class="w-24 h-24 rounded-full object-cover shadow-md" />
-          <div>
-            <h2 class="text-lg font-semibold text-gray-900 mb-1">
-              Prof. Maria Coral del Val Muñoz – <span class="text-gray-700">University of Granada, Spain</span>
-            </h2>
-            <p class="text-sm text-gray-600 italic mb-3">
-              Associate Professor at Department of Computer Science and Artificial Intelligence
-            </p>
-            <p class="text-gray-700 leading-relaxed">
-              [Abstract text to be added here when available.]
-            </p>
-          </div>
+        <div class="absolute left-0 mt-2 w-80 bg-white shadow-lg rounded-lg p-4 text-sm text-gray-700 
+                    opacity-0 scale-95 pointer-events-none 
+                    group-hover:opacity-100 group-hover:scale-100 group-hover:pointer-events-auto
+                    transition-all duration-200 ease-out z-20">
+          [Abstract text to be added here when available.]
+          <div class="absolute -top-2 left-4 w-3 h-3 bg-white rotate-45 shadow-sm"></div>
         </div>
-      </article>
+      </div>
+
+      <!-- SPEAKER 4 -->
+      <div class="relative group border-b border-gray-300 py-4 cursor-default">
+        <p class="text-lg font-semibold text-gray-900">
+          Dr. Agostino Migliore
+          <span class="text-gray-700 font-normal">– Padua University, Italy</span>
+        </p>
+        <p class="text-sm text-gray-500 italic">Assistant Research Professor at TAME Plasmons</p>
+
+        <div class="absolute left-0 mt-2 w-80 bg-white shadow-lg rounded-lg p-4 text-sm text-gray-700 
+                    opacity-0 scale-95 pointer-events-none 
+                    group-hover:opacity-100 group-hover:scale-100 group-hover:pointer-events-auto
+                    transition-all duration-200 ease-out z-20">
+          [Abstract text to be added here when available.]
+          <div class="absolute -top-2 left-4 w-3 h-3 bg-white rotate-45 shadow-sm"></div>
+        </div>
+      </div>
+
+      <!-- SPEAKER 5 -->
+      <div class="relative group border-b border-gray-300 py-4 cursor-default">
+        <p class="text-lg font-semibold text-gray-900">
+          Prof. Susan Quinn
+          <span class="text-gray-700 font-normal">– University College Dublin, Ireland</span>
+        </p>
+        <p class="text-sm text-gray-500 italic">Professor at School of Chemistry</p>
+
+        <div class="absolute left-0 mt-2 w-80 bg-white shadow-lg rounded-lg p-4 text-sm text-gray-700 
+                    opacity-0 scale-95 pointer-events-none 
+                    group-hover:opacity-100 group-hover:scale-100 group-hover:pointer-events-auto
+                    transition-all duration-200 ease-out z-20">
+          [Abstract text to be added here when available.]
+          <div class="absolute -top-2 left-4 w-3 h-3 bg-white rotate-45 shadow-sm"></div>
+        </div>
+      </div>
+
+      <!-- SPEAKER 6 -->
+      <div class="relative group border-b border-gray-300 py-4 cursor-default">
+        <p class="text-lg font-semibold text-gray-900">
+          Prof. Hans-Achim Wagenknecht
+          <span class="text-gray-700 font-normal">– Karlsruhe Institute of Technology, Germany</span>
+        </p>
+        <p class="text-sm text-gray-500 italic">Research group leader at Wagenknecht group</p>
+
+        <div class="absolute left-0 mt-2 w-80 bg-white shadow-lg rounded-lg p-4 text-sm text-gray-700 
+                    opacity-0 scale-95 pointer-events-none 
+                    group-hover:opacity-100 group-hover:scale-100 group-hover:pointer-events-auto
+                    transition-all duration-200 ease-out z-20">
+          [Abstract text to be added here when available.]
+          <div class="absolute -top-2 left-4 w-3 h-3 bg-white rotate-45 shadow-sm"></div>
+        </div>
+      </div>
+
+      <!-- SPEAKER 7 -->
+      <div class="relative group border-b border-gray-300 py-4 cursor-default">
+        <p class="text-lg font-semibold text-gray-900">
+          Prof. Maria Coral del Val Muñoz
+          <span class="text-gray-700 font-normal">– University of Granada, Spain</span>
+        </p>
+        <p class="text-sm text-gray-500 italic">
+          Associate Professor at Department of Computer Science and Artificial Intelligence
+        </p>
+
+        <div class="absolute left-0 mt-2 w-80 bg-white shadow-lg rounded-lg p-4 text-sm text-gray-700 
+                    opacity-0 scale-95 pointer-events-none 
+                    group-hover:opacity-100 group-hover:scale-100 group-hover:pointer-events-auto
+                    transition-all duration-200 ease-out z-20">
+          [Abstract text to be added here when available.]
+          <div class="absolute -top-2 left-4 w-3 h-3 bg-white rotate-45 shadow-sm"></div>
+        </div>
+      </div>
 
     </section>
 
@@ -166,5 +162,6 @@ import Navbar from "../components/Navbar.astro";
     <footer class="bg-gray-900 text-white text-center py-6">
       <p>QEpi 2026 – Quantum Effects on Epigenetic Regulation in Living Systems</p>
     </footer>
+
   </body>
 </html>

@@ -41,7 +41,7 @@ import Navbar from "../components/Navbar.astro";
         </a>
       </div>
 
-      <!-- Overlayed Welcome Message (inside the image) -->
+      <!-- Overlayed Welcome Message -->
       <div
         class="relative z-10 bg-black/40 backdrop-blur-sm text-white text-center px-8 py-10 rounded-2xl shadow-lg max-w-3xl mb-20"
       >
@@ -64,7 +64,7 @@ import Navbar from "../components/Navbar.astro";
         </h2>
 
         <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-2 text-center">
-          <!-- About -->
+          
           <a
             href="/about"
             class="bg-white rounded-2xl shadow-md hover:shadow-xl p-8 transition flex flex-col items-center justify-center"
@@ -80,7 +80,6 @@ import Navbar from "../components/Navbar.astro";
             </p>
           </a>
 
-          <!-- Invited Speakers -->
           <a
             href="/speakers"
             class="bg-white rounded-2xl shadow-md hover:shadow-xl p-8 transition flex flex-col items-center justify-center"
@@ -96,23 +95,6 @@ import Navbar from "../components/Navbar.astro";
             </p>
           </a>
 
-          <!-- Committee 
-          <a
-            href="/committee"
-            class="bg-white rounded-2xl shadow-md hover:shadow-xl p-8 transition flex flex-col items-center justify-center"
-          >
-            <img
-              src="/icons/committee.svg"
-              alt="Committee icon"
-              class="w-12 h-12 mb-4 opacity-80"
-            />
-            <h3 class="text-xl font-semibold mb-2">Scientific Committee</h3>
-            <p class="text-gray-600">
-              Meet the team organizing the conference and the scientific boards.
-            </p>
-          </a>-->
-
-          <!-- Program -->
           <a
             href="/program2"
             class="bg-white rounded-2xl shadow-md hover:shadow-xl p-8 transition flex flex-col items-center justify-center"
@@ -128,23 +110,6 @@ import Navbar from "../components/Navbar.astro";
             </p>
           </a>
 
-          <!-- Venue 
-          <a
-            href="/about#venue"
-            class="bg-white rounded-2xl shadow-md hover:shadow-xl p-8 transition flex flex-col items-center justify-center"
-          >
-            <img
-              src="/icons/location.svg"
-              alt="Venue icon"
-              class="w-12 h-12 mb-4 opacity-80"
-            />
-            <h3 class="text-xl font-semibold mb-2">Venue</h3>
-            <p class="text-gray-600">
-              Discover Schloss Reisensburg, its facilities, and location details.
-            </p>
-          </a>-->
-
-          <!-- Contact -->
           <a
             href="mailto:mirko.rossini@uni-ulm.de"
             class="bg-white rounded-2xl shadow-md hover:shadow-xl p-8 transition flex flex-col items-center justify-center"
@@ -163,104 +128,102 @@ import Navbar from "../components/Navbar.astro";
       </div>
     </section>
 
-    <!-- Scientific Committee Preview -->
-    <section class="bg-white py-16 border-t border-gray-200">
-    <h3 class="text-center text-3xl font-semibold text-indigo-700 mb-10">
-        Scientific Committee
-    </h3>
+    <section class="bg-white py-20 border-t border-gray-200">
+      <div class="max-w-7xl mx-auto px-6">
 
-    <!-- Horizontal scrollable container -->
-    <div class="max-w-7xl mx-auto px-6 overflow-x-auto">
-        <div class="flex justify-center gap-12 min-w-max pb-4">
-        
-        <!-- Mirko Rossini -->
-        <div class="flex flex-col items-center text-center w-40 flex-shrink-0">
-            <img
-            src="/committee/mirko.jpg"
-            alt="Dr. Mirko Rossini"
-            class="w-32 h-32 rounded-full object-cover mb-3 shadow-md"
-            />
-            <p class="text-lg font-semibold text-gray-800">Dr. Mirko Rossini</p>
-            <p class="text-base text-gray-500">Ulm University, Germany</p>
+        <!-- Two cards side by side -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+
+          <!-- LEFT CARD — Scientific Committee -->
+          <div class="bg-gray-50 rounded-2xl shadow-lg p-12 transition-all duration-300">
+
+            <h3 class="text-center text-3xl font-semibold text-indigo-700 mb-12">
+              Scientific Committee
+            </h3>
+
+            <!-- GRID: 3 on top, 3 on bottom -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-x-12 gap-y-14 items-start text-left">
+
+              <!-- PERSON 1 -->
+              <div class="space-y-[3px]">
+                <p class="text-lg font-semibold text-gray-900">Dr. Mirko Rossini</p>
+                <p class="text-gray-600 text-[0.95rem] leading-snug">
+                  Ulm University,<br>Germany
+                </p>
+              </div>
+
+              <!-- PERSON 2 -->
+              <div class="space-y-[3px]">
+                <p class="text-lg font-semibold text-gray-900">Prof. Joachim Ankerhold</p>
+                <p class="text-gray-600 text-[0.95rem] leading-snug">
+                  Ulm University,<br>Germany
+                </p>
+              </div>
+
+              <!-- PERSON 3 -->
+              <div class="space-y-[3px]">
+                <p class="text-lg font-semibold text-gray-900">Prof. Ole Ammerpohl</p>
+                <p class="text-gray-600 text-[0.95rem] leading-snug">
+                  Ulm University,<br>Germany
+                </p>
+              </div>
+
+              <!-- SOFT ROW DIVIDER (only shows on MD and above) -->
+              <div class="md:col-span-3 border-t border-gray-200"></div>
+
+              <!-- PERSON 4 -->
+              <div class="space-y-[3px]">
+                <p class="text-lg font-semibold text-gray-900">Prof. Sven Rau</p>
+                <p class="text-gray-600 text-[0.95rem] leading-snug">
+                  Ulm University,<br>Germany
+                </p>
+              </div>
+
+              <!-- PERSON 5 -->
+              <div class="space-y-[3px]">
+                <p class="text-lg font-semibold text-gray-900">Prof. Rosa Di Felice</p>
+                <p class="text-gray-600 text-[0.95rem] leading-snug">
+                  University of Southern California,<br>Los Angeles
+                </p>
+              </div>
+
+              <!-- PERSON 6 -->
+              <div class="space-y-[3px]">
+                <p class="text-lg font-semibold text-gray-900">Prof. Constantinos Simserides</p>
+                <p class="text-gray-600 text-[0.95rem] leading-snug">
+                  National and Kapodistrian University of Athens,<br>Greece
+                </p>
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <!-- RIGHT CARD — Join QEpi 2026 -->
+          <div class="bg-gray-50 rounded-2xl shadow-lg p-10 flex flex-col justify-center text-center">
+
+            <h2 class="text-3xl font-bold mb-6">Join QEpi 2026</h2>
+
+            <p class="text-lg text-gray-700 mb-10 leading-relaxed">
+              Check how to apply and submit your application.
+            </p>
+
+            <a
+              href="/application"
+              class="inline-block bg-indigo-600 text-white font-semibold px-10 py-4 rounded-xl shadow-md hover:bg-indigo-700 transition w-fit mx-auto"
+            >
+              Submit Your Application
+            </a>
+
+          </div>
+
         </div>
 
-        <!-- Joachim Ankerhold -->
-        <div class="flex flex-col items-center text-center w-40 flex-shrink-0">
-            <img
-            src="/committee/joachim.webp"
-            alt="Prof. Joachim Ankerhold"
-            class="w-32 h-32 rounded-full object-cover mb-3 shadow-md"
-            />
-            <p class="text-lg font-semibold text-gray-800">Prof. Joachim Ankerhold</p>
-            <p class="text-base text-gray-500">Ulm University, Germany</p>
-        </div>
-
-        <!-- Ole Ammerpohl -->
-        <div class="flex flex-col items-center text-center w-40 flex-shrink-0">
-            <img
-            src="/committee/ole.webp"
-            alt="Prof. Ole Ammerpohl"
-            class="w-32 h-32 rounded-full object-cover mb-3 shadow-md"
-            />
-            <p class="text-lg font-semibold text-gray-800">Prof. Ole Ammerpohl</p>
-            <p class="text-base text-gray-500">Ulm University, Germany</p>
-        </div>
-
-        <!-- Sven Rau -->
-        <div class="flex flex-col items-center text-center w-40 flex-shrink-0">
-            <img
-            src="/committee/sven.jpg"
-            alt="Prof. Sven Rau"
-            class="w-32 h-32 rounded-full object-cover mb-3 shadow-md"
-            />
-            <p class="text-lg font-semibold text-gray-800">Prof. Sven Rau</p>
-            <p class="text-base text-gray-500">Ulm University, Germany</p>
-        </div>
-
-        <!-- Rosa Di Felice -->
-        <div class="flex flex-col items-center text-center w-40 flex-shrink-0">
-            <img
-            src="/committee/rosa.jpg"
-            alt="Prof. Rosa Di Felice"
-            class="w-32 h-32 rounded-full object-cover mb-3 shadow-md"
-            />
-            <p class="text-lg font-semibold text-gray-800">Prof. Rosa Di Felice</p>
-            <p class="text-base text-gray-500">University of Southern California, Los Angeles</p>
-        </div>
-
-        <!-- Constantinos Simserides -->
-        <div class="flex flex-col items-center text-center w-40 flex-shrink-0">
-            <img
-            src="/committee/costas.webp"
-            alt="Prof. Constantinos Simserides"
-            class="w-32 h-32 rounded-full object-cover mb-3 shadow-md"
-            />
-            <p class="text-lg font-semibold text-gray-800">Prof. Constantinos Simserides</p>
-            <p class="text-base text-gray-500">National and Kapodistrian University of Athens, Greece</p>
-        </div>
-
-        </div>
-    </div>
+      </div>
     </section>
 
 
-
-
-    <!-- Call to Action -->
-    <section class="py-20 text-center">
-      <h2 class="text-3xl font-bold mb-4">Join QEpi 2026</h2>
-      <p class="text-lg text-gray-700 mb-8">
-        Check how to apply and submit your application
-      </p>
-      <a
-        href="/application"
-        class="inline-block bg-indigo-600 text-white font-semibold px-8 py-3 rounded-lg shadow-md hover:bg-indigo-700 transition"
-      >
-        Submit Your Application
-      </a>
-    </section>
-
-    <!-- Footer -->
     <footer class="bg-gray-900 text-white text-center py-6">
       <p>
         QEpi 2026 – Quantum Effects on Epigenetic Regulation in Living Systems
